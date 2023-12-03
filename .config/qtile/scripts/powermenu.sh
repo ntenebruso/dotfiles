@@ -12,7 +12,7 @@ case "$selected" in
 		systemctl suspend
 		;;
 	"logout")
-		pkill qtile
+		killall -u $USER
 		;;
 	"poweroff")
 		systemctl poweroff
