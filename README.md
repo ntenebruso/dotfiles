@@ -8,11 +8,12 @@ You can use multiple methods to sync this repo to your dotfiles, including symli
 
 ```sh
 git clone --bare https://github.com/ntenebruso/dotfiles.git $HOME/.cfg
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'"
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> ~/.bashrc
+source ~/.bashrc
 config checkout
 ```
 
-You can then use git like normal by using the alias `config` again, eg.:
+You can then use git like normal by using the alias `config`, e.g.:
 
 ```sh
 config add ~/.vimrc
