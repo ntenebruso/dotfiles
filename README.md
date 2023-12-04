@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is a collection of the dotfiles I use for my personal machines. Feel free to use for your own use. These files setup programs including QTile, Vim, and Picom.
+This is a collection of the dotfiles I use for my personal machines. Feel free to use for your own use. These files set up programs including QTile, Vim, and Picom.
 
 ## Installation
 
@@ -8,7 +8,7 @@ You can use multiple methods to sync this repo to your dotfiles, including symli
 
 ```sh
 git clone --bare https://github.com/ntenebruso/dotfiles.git $HOME/.cfg
-source ~/.bashrc
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'"
 config checkout
 ```
 
