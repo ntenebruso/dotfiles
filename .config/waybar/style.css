@@ -1,0 +1,69 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Fira Code", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #282A36;
+    color: #F8F8F2;
+    opacity: 0.8;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 2px 5px;
+    background: transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: #44475A;
+    border-bottom: 3px solid white;
+}
+
+/*     "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"], */
+
+#mpd,
+#idle_inhibitor,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#keyboard-state,
+#battery,
+#clock,
+#tray {
+    margin: 0 2px;
+    border-bottom: 3px solid #FF5555;
+    padding: 2px;
+}
+
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
