@@ -1,4 +1,5 @@
 #!/bin/sh
 
-picom &
-xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
+[ $XDG_SESSION_TYPE == "x11" ] && picom &
+xss-lock i3lock &
+

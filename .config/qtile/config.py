@@ -41,6 +41,9 @@ def autostart():
     home = os.path.expanduser("~/.config/qtile/scripts/autostart.sh")
     subprocess.Popen([home])
 
+# Set environment variables
+os.environ["WLR_NO_HARDWARE_CURSORS"] = "1" # for nvidia
+
 colors = {
     "bg": "#282a36",
     "fg": "#f8f8f2",
@@ -231,6 +234,7 @@ dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
 bring_front_click = False
+floats_kept_above = True
 cursor_warp = False
 floating_layout = layout.Floating(
     float_rules=[
