@@ -1,37 +1,65 @@
+@define-color background #282A36;
+@define-color foreground #F8F8F2;
+@define-color selection #44475A;
+@define-color comment #6272A4;
+@define-color red #FF5555;
+@define-color orange #FFB86C;
+@define-color yellow #F1FA8C;
+@define-color green #50FA7B;
+@define-color purple #BD93F9;
+@define-color cyan #8BE9FD;
+@define-color pink #FF79C6;
+
 * {
+    margin: 0;
+    padding: 0;
     border: none;
     border-radius: 0;
     font-family: "Fira Code", "Font Awesome 6 Free";
-    font-size: 13px;
+    font-size: 12px;
     min-height: 0;
 }
 
 window#waybar {
-    background: #282A36;
-    color: #F8F8F2;
-    opacity: 0.8;
+    background: @background;
+    color: @foreground;
 }
 
 tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
+  background: @background;
+  border: 1px solid @foreground;
 }
+
 tooltip label {
-  color: white;
+  color: @foreground;
+}
+
+#workspaces {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    background: @selection;
+    padding: 0 8px;
+    border-radius: 100px;
 }
 
 #workspaces button {
-    padding: 2px 5px;
+    padding: 4px 5px;
     background: transparent;
-    border-bottom: 3px solid transparent;
 }
 
 #workspaces button.active {
-    background: #44475A;
-    border-bottom: 3px solid white;
+    color: @red;
 }
 
 /*     "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"], */
+
+#clock {
+    margin: 3px 0;
+    background: @purple;
+    padding: 0 8px;
+    border-radius: 100px;
+}
 
 #mpd,
 #idle_inhibitor,
@@ -43,11 +71,28 @@ tooltip label {
 #backlight,
 #keyboard-state,
 #battery,
-#clock,
 #tray {
-    margin: 0 2px;
-    border-bottom: 3px solid #FF5555;
-    padding: 2px;
+    color: @background;
+    margin: 3px 2px;
+    padding: 0 8px;
+    border-radius: 100px;
+}
+
+#idle_inhibitor,
+#pulseaudio,
+#network {
+    background: @red;
+}
+
+#cpu,
+#memory,
+#temperature {
+    background: lighter(@green);
+}
+
+#keyboard-state,
+#tray {
+    background: @cyan;
 }
 
 
