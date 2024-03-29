@@ -1,14 +1,13 @@
-@define-color background #282A36;
-@define-color foreground #F8F8F2;
-@define-color selection #44475A;
-@define-color comment #6272A4;
-@define-color red #FF5555;
-@define-color orange #FFB86C;
-@define-color yellow #F1FA8C;
-@define-color green #50FA7B;
-@define-color purple #BD93F9;
-@define-color cyan #8BE9FD;
-@define-color pink #FF79C6;
+@define-color background #282828;
+@define-color foreground #ebdbb2;
+@define-color selection #3c3836;
+@define-color red #fb4934;
+@define-color orange #fe8019;
+@define-color yellow #fabd2f;
+@define-color green #b8bb26;
+@define-color purple #b16285;
+@define-color blue #83a598;
+@define-color aqua #8ec07c;
 
 * {
     margin: 0;
@@ -56,7 +55,8 @@ tooltip label {
 
 #clock {
     margin: 3px 0;
-    background: @purple;
+    background: @aqua;
+    color: @background;
     padding: 0 8px;
     border-radius: 100px;
 }
@@ -87,12 +87,12 @@ tooltip label {
 #cpu,
 #memory,
 #temperature {
-    background: lighter(@green);
+    background: @green;
 }
 
 #keyboard-state,
 #tray {
-    background: @cyan;
+    background: @blue;
 }
 
 
