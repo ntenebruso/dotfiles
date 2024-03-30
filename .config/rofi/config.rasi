@@ -132,3 +132,5 @@ element-text, element-icon {
     text-color: inherit;
 }
 
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
