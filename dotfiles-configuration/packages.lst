@@ -1,0 +1,38 @@
+# Hyprland
+hyprland
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+
+# zsh
+zsh
+zsh-completions
+
+# Bluetooth
+bluez
+bluez-utils
+blueman
+
+# Pipewire
+pipewire
+wireplumber
+pipewire-audio
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+
+# Session lock
+swaylock
+swayidle
+
+# Screenshots
+grim
+slurp
+
+# Fonts
+ttf-mononoki-nerd
+ttf-firacode-nerd
+
+# Additional applications
+alacritty
+firefox
+
