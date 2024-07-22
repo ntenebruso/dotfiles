@@ -6,6 +6,8 @@ xdg-desktop-portal-hyprland
 # zsh
 zsh
 zsh-completions
+zsh-syntax-highlighting
+starship
 
 # Bluetooth
 bluez
