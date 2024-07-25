@@ -30,9 +30,15 @@ swayidle
 grim
 slurp
 
+# Text editor
+neovim
+
+# Tools
+stow
+
 # Fonts
 ttf-mononoki-nerd
-ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
 
 # Additional applications
 alacritty

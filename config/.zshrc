@@ -1,6 +1,3 @@
-# Run neofetch on terminal startup
-neofetch
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -18,6 +15,9 @@ compinit
 # ZSH Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Run neofetch on terminal startup
+neofetch
+
 alias ls='ls --color=auto'
 
 # NVM config
@@ -30,9 +30,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH=$PATH:/home/nick/.spicetify
-
-# Dotfiles config
-alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 eval "$(starship init zsh)"
 
