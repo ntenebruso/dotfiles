@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 # Check for and intall yay
 if ! command -v yay &> /dev/null
