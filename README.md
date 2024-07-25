@@ -4,17 +4,11 @@ This is a collection of the dotfiles I use for my personal machines. Feel free t
 
 ## Installation
 
-You can use multiple methods to sync this repo to your dotfiles, including symlinks, but the method I typically use is the "bare-repo" method, outlined below:
+To use this repo, simply clone it to a folder in your home directory, then run the installation script which installs all necessary packages then symlinks the dotfiles:
 
 ```sh
-git clone --bare https://github.com/ntenebruso/dotfiles.git $HOME/.cfg
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> ~/.bashrc
-source ~/.bashrc
-config checkout
+git clone https://github.com/ntenebruso/dotfiles/tree/master ~/.dotfiles
+cd .dotfiles
+./scripts/install.sh
 ```
 
-You can then use git like normal by using the alias `config`, e.g.:
-
-```sh
-config add ~/.vimrc
-```
