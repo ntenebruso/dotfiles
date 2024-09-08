@@ -15,10 +15,12 @@ compinit
 # ZSH Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Run neofetch on terminal startup
-neofetch
-
+# Aliases
 alias ls='ls --color=auto'
+alias v='nvim'
+
+# Run fastfetch on terminal startup
+fastfetch
 
 # NVM config
 export NVM_DIR="$HOME/.nvm"
