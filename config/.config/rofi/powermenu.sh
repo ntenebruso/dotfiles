@@ -13,7 +13,7 @@ case "$selected" in
 		systemctl suspend
 		;;
   "lock")
-    swaylock -f; sleep 1; hyprctl dispatch dpms off
+    hyprlock;
     ;;
 	"logout")
 		pkill -SIGKILL -u $USER
