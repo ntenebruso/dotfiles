@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+base_dir="$(dirname $0)/.."
+
 # Check for and intall yay
 if ! command -v yay &> /dev/null
 then
@@ -12,27 +14,13 @@ else
   echo "Yay is already installed. Skipping installation."
 fi
 
-# Install packages from pacman
-echo "######################"
-echo "Installing packages..."
-echo "######################"
+# Install packages
+source "$base_dir/scripts/install-packages.sh"
 
-packages_list=$(cat "./packages.lst" | grep -o "^[^#]*" | tr "\n" " ")
-if [ ! -z "$packages_list" ]; then
-  sudo pacman -S --needed $packages_list || { echo "Package installation failed."; exit 1; }
-fi
-
-# Install packages from aur
-echo "##########################"
-echo "Installing AUR packages..."
-echo "##########################"
-
-aur_packages_list=$(cat "./packages-aur.lst" | grep -o "^[^#]*" | tr "\n" " ")
-if [ ! -z "$aur_packages_list" ]; then
-  yay -S --needed $aur_packages_list || { echo "AUR package installation failed."; exit 1; }
-fi
+# Install AUR packages
+source "$base_dir/scripts/install-packages-aur.sh"
 
 # Stow files
-base_dir="$(dirname $0)/.."
 cd "$base_dir/config"
 stow -v -t ~ .
+

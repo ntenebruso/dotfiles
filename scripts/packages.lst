@@ -1,7 +1,13 @@
 # Hyprland
 hyprland
+hyprpaper
+waybar
+nwg-displays
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
+
+# Notifications
+dunst
 
 # zsh
 zsh
@@ -21,6 +27,7 @@ pipewire-audio
 pipewire-alsa
 pipewire-pulse
 pipewire-jack
+pavucontrol
 
 # Session lock
 swaylock

@@ -14,7 +14,7 @@
     padding: 0;
     border: none;
     border-radius: 0;
-    font-family: "Fira Code", "Font Awesome 6 Free";
+    font-family: "Mononoki Nerd Font"; 
     font-size: 12px;
     min-height: 0;
 }
@@ -45,10 +45,11 @@ tooltip label {
 #workspaces button {
     padding: 4px 5px;
     background: transparent;
+    color: @foreground;
 }
 
 #workspaces button.active {
-    color: @red;
+    color: @green;
 }
 
 /*     "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"], */
@@ -78,6 +79,7 @@ tooltip label {
     border-radius: 100px;
 }
 
+#mpd,
 #idle_inhibitor,
 #pulseaudio,
 #network {
@@ -90,7 +92,9 @@ tooltip label {
     background: @green;
 }
 
+#backlight,
 #keyboard-state,
+#battery,
 #tray {
     background: @blue;
 }

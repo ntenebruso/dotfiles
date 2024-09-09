@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 function get_volume() {
-  amixer get Master | grep -Po "[0-9]*(?=%)" | head -1 
+  vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+  echo ${vol##*.}
 }
 
 function send_notification() {
@@ -11,15 +12,15 @@ function send_notification() {
 
 case $1 in
   up)
-    amixer set Master 2%+ > /dev/null
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+ -l 1.0
     send_notification
     ;;
   down)
-    amixer set Master 2%- > /dev/null
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
     send_notification
     ;;
   mute)
-    amixer set Master toggle > /dev/null
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
     ;;
 esac
 
