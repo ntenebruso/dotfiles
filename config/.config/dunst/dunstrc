@@ -63,6 +63,9 @@
     # Corner radius for the progress bar. 0 disables rounded corners.
     progress_bar_corner_radius = 0
 
+    # Progress bar color
+    highlight = "#ebdbb2"
+
     # Corner radius for the icon image.
     icon_corner_radius = 0
 
@@ -92,7 +95,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
     frame_color = "#ebdbb2"
@@ -128,7 +131,7 @@
 
     ### Text ###
 
-    font = "Mononoki Nerd Font" 8
+    font = "Mononoki Nerd Font" 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -255,7 +258,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -321,6 +324,7 @@
     background = "#282828"
     foreground = "#ebdbb2"
     timeout = 10
+    icon_position = off
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -329,6 +333,7 @@
     foreground = "#ebdbb2"
     timeout = 10
     override_pause_level = 30
+    icon_position = off
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -337,6 +342,7 @@
     foreground = "#282828"
     timeout = 0
     override_pause_level = 60
+    icon_position = off
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 

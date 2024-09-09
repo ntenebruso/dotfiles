@@ -1,11 +1,18 @@
-# Hyprland
+# Hyprland and wayland
 hyprland
 hyprpaper
 hyprlock
+hyprcursor
+hypridle
 waybar
+wl-clipboard
 nwg-displays
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
+
+# Theming
+gnome-themes-extra
+qt6ct
 
 # Notifications
 dunst
@@ -43,6 +50,7 @@ neovim
 
 # Tools
 stow
+brightnessctl
 
 # Fonts
 ttf-mononoki-nerd

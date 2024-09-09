@@ -13,7 +13,7 @@ case "$selected" in
 		systemctl suspend
 		;;
   "lock")
-    hyprlock;
+    loginctl lock-session
     ;;
 	"logout")
 		pkill -SIGKILL -u $USER
