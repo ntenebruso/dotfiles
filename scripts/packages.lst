@@ -12,6 +12,7 @@ xdg-desktop-portal-hyprland
 
 # Theming
 gnome-themes-extra
+qt5ct
 qt6ct
 
 # Notifications
