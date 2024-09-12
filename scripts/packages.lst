@@ -29,6 +29,9 @@ bluez
 bluez-utils
 blueman
 
+# Wifi
+network-manager-applet
+
 # Pipewire
 pipewire
 wireplumber
