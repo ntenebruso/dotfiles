@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 function get_volume() {
-  vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
-  echo ${vol##*.}
+  echo $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk -F ': ' '{print $2 * 100}')
 }
 
 function send_notification() {
   volume=$(get_volume)
-  notify-send "Volume: $volume" -r 555 -h "int:value:$volume" -t 2000
+  notify-send "Volume: $volume%" -r 555 -h "int:value:$volume" -t 2000
 }
 
 case $1 in

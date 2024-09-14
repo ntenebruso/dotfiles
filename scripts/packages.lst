@@ -14,6 +14,10 @@ xdg-desktop-portal-hyprland
 gnome-themes-extra
 qt5ct
 qt6ct
+kvantum
+kvantum-qt5
+qt5-wayland
+qt6-wayland
 
 # Notifications
 dunst

@@ -7,6 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
+  "clangd",
   "ts_ls",
   "astro",
   "pylsp",
