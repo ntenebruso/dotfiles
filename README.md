@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is a collection of the dotfiles I use for my personal machines. Feel free to use for your own use. These files set up programs including QTile, Vim, and Picom.
+This is a collection of the dotfiles I use for my personal machines. Feel free to use for your own use. These files set up programs such as Sway, waybar, alacritty, neovim, and more.
 
 ## Installation
 

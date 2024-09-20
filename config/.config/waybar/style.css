@@ -48,7 +48,7 @@ tooltip label {
     color: @foreground;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
     color: @green;
 }
 

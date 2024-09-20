@@ -1,14 +1,11 @@
-# Hyprland and wayland
-hyprland
-hyprpaper
-hyprlock
-hyprcursor
-hypridle
+# Sway and wayland
+sway
+swaybg
 waybar
 wl-clipboard
 nwg-displays
 xdg-desktop-portal
-xdg-desktop-portal-hyprland
+xdg-desktop-portal-wlr
 
 # Theming
 gnome-themes-extra
@@ -46,7 +43,7 @@ pipewire-jack
 pavucontrol
 
 # Session lock
-swaylock
+gtklock
 swayidle
 
 # Screenshots

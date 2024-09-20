@@ -16,7 +16,7 @@ case "$selected" in
     loginctl lock-session
     ;;
 	"logout")
-    loginctl kill-user $USER
+    pkill -u $USER
 		;;
 	"poweroff")
 		systemctl poweroff
