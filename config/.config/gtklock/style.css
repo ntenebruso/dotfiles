@@ -1,0 +1,12 @@
+window {
+  font-family: "Mononoki Nerd Font";
+  background-image: url("../../wallpapers/pixel_wallpaper.png");
+  color: #fbf1c7;
+}
+
+#window-box {
+  padding: 50px;
+  border: 1px solid #fbf1c7;
+  border-radius: 4px;
+  background-color: #282828;
+}

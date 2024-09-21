@@ -183,6 +183,12 @@ input "type:touchpad" {
     bindsym XF86MonBrightnessUp exec ~/.config/sway/scripts/brightness.sh up
     bindsym XF86MonBrightnessDown exec ~/.config/sway/scripts/brightness.sh down
 #
+# Lid switch:
+#
+    set $laptop_screen 'eDP-1'
+    bindswitch --locked --reload lid:on exec '[ $(swaymsg -t get_outputs | grep name | wc -l) -le 1 ] && systemctl suspend || swaymsg output $laptop_screen disable'
+    bindswitch --locked --reload lid:off output $laptop_screen enable
+#
 # Resizing containers:
 #
 mode "resize" {
