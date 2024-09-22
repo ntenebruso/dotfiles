@@ -26,8 +26,8 @@ set $filemanager dolphin
 include ~/.config/sway/outputs
 include ~/.config/sway/workspaces
 
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/wallpapers/pixel_wallpaper.png fill
+# Wallpaper
+output * bg ~/wallpapers/mountains.png fill
 
 ### Idle configuration
 exec swayidle -w \

@@ -1,11 +1,11 @@
-@define-color background #282828;
+@define-color background #1d2021;
 @define-color foreground #ebdbb2;
 @define-color selection #3c3836;
 @define-color red #fb4934;
 @define-color orange #fe8019;
 @define-color yellow #fabd2f;
 @define-color green #b8bb26;
-@define-color purple #b16285;
+@define-color purple #d3869b;
 @define-color blue #83a598;
 @define-color aqua #8ec07c;
 
@@ -20,7 +20,7 @@
 }
 
 window#waybar {
-    background: @background;
+    background: alpha(@background, 0.4);
     color: @foreground;
 }
 
@@ -33,13 +33,20 @@ tooltip label {
   color: @foreground;
 }
 
+.modules-left {
+  margin-left: 5px;
+}
+
+.modules-right {
+  margin-right: 5px;
+}
+
 #workspaces {
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-left: 4px;
-    background: @selection;
     padding: 0 8px;
-    border-radius: 100px;
+    border-radius: 5px;
+    background: @background;
 }
 
 #workspaces button {
@@ -49,20 +56,24 @@ tooltip label {
 }
 
 #workspaces button.focused {
-    color: @green;
+    color: darker(@foreground);
 }
 
-/*     "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"], */
+#mpris {
+    margin: 3px 0;
+    padding: 0 8px;
+    border-radius: 5px;
+    background: @background;
+}
 
 #clock {
     margin: 3px 0;
-    background: @aqua;
-    color: @background;
+    background: @background;
+    color: @aqua;
     padding: 0 8px;
-    border-radius: 100px;
+    border-radius: 5px;
 }
 
-#mpd,
 #idle_inhibitor,
 #pulseaudio,
 #network,
@@ -73,30 +84,30 @@ tooltip label {
 #keyboard-state,
 #battery,
 #tray {
-    color: @background;
-    margin: 3px 2px;
+    background: @background;
+    margin: 3px 0;
+    margin-left: 3px;
     padding: 0 8px;
-    border-radius: 100px;
+    border-radius: 5px;
 }
 
-#mpd,
 #idle_inhibitor,
 #pulseaudio,
 #network {
-    background: @red;
+    color: @red;
 }
 
 #cpu,
 #memory,
 #temperature {
-    background: @green;
+    color: @green;
 }
 
 #backlight,
 #keyboard-state,
 #battery,
 #tray {
-    background: @blue;
+    color: @blue;
 }
 
 #battery.warning:not(.charging) {
