@@ -27,7 +27,7 @@ include ~/.config/sway/outputs
 include ~/.config/sway/workspaces
 
 # Wallpaper
-output * bg ~/wallpapers/mountains.png fill
+output * bg ~/wallpapers/archpc_gruvbox.png fill
 
 ### Idle configuration
 exec swayidle -w \

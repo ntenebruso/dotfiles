@@ -1,4 +1,4 @@
-import = ["/home/nick/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
 
 [font]
 size = 12.0
