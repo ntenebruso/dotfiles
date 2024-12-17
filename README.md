@@ -1,3 +1,6 @@
+> [!WARNING]
+> I have moved to NixOS, and this code is no longer maintained. For my up-to-date Nix configuration, please take look at [this repository](https://github.com/ntenebruso/nixos-config).
+
 # Dotfiles
 
 This is a collection of the dotfiles I use for my personal machines. Feel free to use for your own use. These files set up programs such as Sway, waybar, alacritty, neovim, and more.
